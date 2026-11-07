@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.appointment-page {
+  min-height: 100vh;
+  background: #f4f8fc;
+  font-family: "Inter", sans-serif;
+  color: #15304f;
+}
+
+.appointment-navbar {
+  height: 75px;
+  padding: 0 7%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8eef5;
+}
+
+.appointment-brand {
+  color: #09244a;
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.appointment-brand span {
+  color: #08b6bb;
+}
+
+.back-dashboard {
+  color: #087f89;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.appointment-container {
+  max-width: 950px;
+  margin: 45px auto;
+  padding: 0 20px;
+}
+
+.appointment-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.appointment-heading > span {
+  color: #08aeb4;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.appointment-heading h1 {
+  color: #09244a;
+  font-size: 34px;
+  margin: 12px 0;
+  font-weight: 800;
+}
+
+.appointment-heading p {
+  color: #75869b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.appointment-form {
+  background: #fff;
+  padding: 38px;
+  border-radius: 18px;
+  border: 1px solid #e7edf4;
+  box-shadow: 0 12px 35px rgba(20, 55, 90, 0.06);
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.form-section-title > span {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: #e7fafa;
+  color: #079ba2;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.form-section-title h2 {
+  font-size: 17px;
+  color: #09244a;
+  margin-bottom: 5px;
+}
+
+.form-section-title p {
+  font-size: 12px;
+  color: #8796a9;
+}
+
+.appointment-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.appointment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.appointment-field label {
+  font-size: 12px;
+  color: #294765;
+  font-weight: 700;
+}
+
+.appointment-field input,
+.appointment-field select,
+.appointment-field textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dce6ef;
+  border-radius: 9px;
+  background: #fbfdff;
+  color: #15304f;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.appointment-field input:focus,
+.appointment-field select:focus,
+.appointment-field textarea:focus {
+  border-color: #08b6bb;
+  box-shadow: 0 0 0 3px rgba(8, 182, 187, 0.1);
+}
+
+.appointment-field textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.appointment-divider {
+  height: 1px;
+  background: #edf1f5;
+  margin: 15px 0 30px;
+}
+
+.reason-field {
+  margin-top: 8px;
+}
+
+.appointment-notice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #eefafa;
+  color: #28777b;
+  border-radius: 9px;
+  padding: 15px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 5px 0 25px;
+}
+
+.appointment-notice span {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.appointment-submit {
+  width: 100%;
+  border: none;
+  background: linear-gradient(100deg, #08aeb4, #087f89);
+  color: #fff;
+  padding: 16px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.appointment-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(8, 174, 180, 0.2);
+}
+
+.appointment-submit span {
+  margin-left: 8px;
+}
+
+.appointment-footer {
+  background: #081f3e;
+  color: #aebed0;
+  text-align: center;
+  padding: 25px;
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+@media (max-width: 650px) {
+  .appointment-navbar {
+    padding: 0 5%;
+  }
+
+  .appointment-container {
+    margin: 30px auto;
+  }
+
+  .appointment-heading h1 {
+    font-size: 27px;
+  }
+
+  .appointment-form {
+    padding: 23px 18px;
+  }
+
+  .appointment-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
