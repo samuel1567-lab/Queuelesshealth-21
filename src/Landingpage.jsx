@@ -131,7 +131,7 @@ function Landingpage() {
 
         <section className="benefits" id="about">
           <div className="benefit-image">
-            <img src="./judas.jpg" alt="QueueLess healthcare" />
+            <img src="./jedina.jpg" alt="QueueLess healthcare" />
           </div>
           <div className="benefit-copy">
             <p className="eyebrow">A BETTER HEALTHCARE EXPERIENCE</p>
